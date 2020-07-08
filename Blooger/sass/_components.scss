@@ -1,0 +1,95 @@
+// --------------- HEADER ------------------------------
+
+// LOGO
+
+.logo {
+	font-size: 4rem;
+	font-family: var(--Lexend);
+	&-text {
+		color: var(--text-grey);
+	}
+}
+
+// NAVIGATION
+
+.nav {
+	font-size: 2rem;
+
+	&__items {
+		display: flex;
+	}
+
+	&__item {
+		padding: 1.5rem 3rem;
+		display: flex;
+		align-items: center;
+
+		&:not(:last-child) {
+			margin-right: 2rem;
+		}
+		a {
+			color: var(--text-grey);
+		}
+
+		&:hover {
+			background: var(--midnight);
+		}
+		&:hover a {
+			color: var(--white);
+		}
+	}
+}
+
+// SOCIALS
+
+.social {
+	font-size: 2rem;
+
+	&__items {
+		display: flex;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 2rem;
+		}
+		a {
+			color: var(--text-grey);
+		}
+		&:hover a {
+			color: #a1c4cf;
+		}
+	}
+}
+
+// BURGER BUTTON FOR MOBILE VERSION
+.toggle-collapse {
+	position: absolute;
+	top: 8%;
+	width: 90%;
+	cursor: pointer;
+	font-size: 2.5rem;
+	color: var(--text-grey);
+	display: none;
+
+	&__icon {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+// ---------------------- MAIN --------------------------
+
+// SHOWCASE SECITON
+
+.showcase {
+	background: url('../img/Background-image.png');
+	background-size: cover;
+	height: 100rem;
+	display: flex;
+
+	&__showcase__content {
+		justify-content: center;
+		align-items: center;
+	}
+}
