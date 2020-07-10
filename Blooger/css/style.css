@@ -97,6 +97,34 @@ ul {
     border: 1px solid var(--white);
     color: var(--white); }
 
+.blog {
+  background: url("../img/Abract01.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+  background-size: 65%; }
+  .blog-post {
+    padding-top: 10rem; }
+    .blog-post__content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 70%;
+      margin: 5rem 3rem;
+      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3); }
+    .blog-post__title {
+      padding: 3rem 0; }
+      .blog-post__title .btn {
+        padding: 1.5rem 4.5rem;
+        background: var(--sky);
+        margin: 1rem; }
+      .blog-post__title span {
+        display: block;
+        font-size: 2rem; }
+      .blog-post__title > *:not(:last-child) {
+        margin-bottom: 2rem; }
+
 .header {
   display: flex;
   background: var(--color-white);
@@ -114,6 +142,9 @@ ul {
   font-size: 1.8rem;
   font-family: var(--Livvic);
   cursor: pointer; }
+
+.container {
+  margin: 0 5vw; }
 
 h1 {
   font-family: var(--Lexend);

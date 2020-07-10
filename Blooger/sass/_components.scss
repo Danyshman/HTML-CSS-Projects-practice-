@@ -103,3 +103,44 @@
 		}
 	}
 }
+
+// BLOG CAROUSEL SECTION
+
+.blog {
+	background: url('../img/Abract01.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 100vh;
+	width: 100%;
+	background-size: 65%;
+
+	&-post {
+		padding-top: 10rem;
+
+		&__content {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			width: 70%;
+			margin: 5rem 3rem;
+			box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3);
+		}
+
+		&__title {
+			padding: 3rem 0;
+			.btn {
+				padding: 1.5rem 4.5rem;
+				background: var(--sky);
+				margin: 1rem;
+			}
+			span {
+				display: block;
+				font-size: 2rem;
+			}
+
+			& > *:not(:last-child) {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}
