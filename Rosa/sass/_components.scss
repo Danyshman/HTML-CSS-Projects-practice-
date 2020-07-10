@@ -140,3 +140,43 @@ header {
 	letter-spacing: 0.5rem;
 	margin-right: -0.5rem;
 }
+
+.separator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.line {
+	width: 100%;
+	max-width: 8.4rem;
+	height: 0.25rem;
+	background-color: #fff;
+	position: relative;
+}
+
+.line-right::before,
+.line-left::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	border: 0.6rem solid transparent;
+	border-right-color: #fff;
+}
+
+.line-right::before {
+	border-right-color: #fff;
+	right: 0;
+}
+
+.line-left::before {
+	border-left-color: #fff;
+	left: 0;
+}
+
+.asterisk {
+	font-size: 1.2rem;
+	color: var(--secondary-font-color);
+	margin: 0 1.6rem;
+}
